@@ -18,6 +18,9 @@ import Contacto from './components/Contactos/Contacto';
 // import MapComponent from './components/Maps/MapComponent';
 
 
+import MapComponent from './components/Maps/MapComponent';
+//components
+import Home from './components/Home/Home';
 
 function App() {
 
@@ -37,6 +40,9 @@ function App() {
           {/* <Cards /> */}
           {/* <MapComponent /> */}
           {/* <Footer />  */}
+          <Cards />
+          {/* <MapComponent /> */}
+          <Footer /> 
           <Routes>
             <Route exact path='/' element={<Hero />} />
             <Route exact path='/contacto' element={<Contacto />} />
