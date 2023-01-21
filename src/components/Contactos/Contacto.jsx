@@ -4,7 +4,7 @@ import React from "react";
 const Contacto = () => {
 
     return (
-        <div className=" h-full w-full p-4 flex  justify-center ">
+        <div className=" h-full w-full p-4 flex  justify-center">
 
             <div className="text-white  rounded-md dark:bg-slate-800 bg-transparent">
 

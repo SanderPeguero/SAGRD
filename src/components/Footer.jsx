@@ -5,6 +5,8 @@ import {
   FaGithubSquare,
   FaInstagram,
   FaTwitterSquare,
+  FaMap,
+  FaLocationArrow
 } from 'react-icons/fa';
 import Logo from '../assets/Logo.svg'
 
@@ -15,12 +17,20 @@ const Footer = () => {
     <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
       <div>
         <img className='w-[7rem] text-3xl font-bold text-[#00df9a]' src={Logo} alt="SAG Logo" />
-        <p className='py-4'>
-          <span className=' text-lg font-bold'>Información de Contacto</span><br/><br/>
-          Teléfono:   809-588-2012<br/>
-          Celular:  (849)-356-4820 / (809)-519-9963<br/>
-          Email: info@sagrd.com<br/>
-          Dirección: Calle 2DA #7, Urb. El Tejar, San Francisco Macorís. República Dominicana</p>
+        <p className='py-1'>
+          <span className=' text-lg font-bold'>Información de Contacto</span><br /><br />
+          Teléfono:   809-588-2012<br />
+          Celular:  (849)-356-4820 / (809)-519-9963<br />
+          Email: info@sagrd.com<br />
+
+        </p>
+        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+          <FaLocationArrow className='fill-current w-4 h-4 mr-2'/>
+          <span>Ubicación</span>
+        </button>
+
+
+
         <div className='flex justify-between md:w-[75%] my-6'>
           <FaFacebookSquare size={30} />
           <FaInstagram size={30} />
