@@ -16,9 +16,6 @@ function TypeAnimation({ strings, className, space, typeSpeed, backSpeed, backSp
     // const textIndex = strings.length
     
     useEffect(() =>  {
-        // const Sa = ['sander', 'daniel', 'pamela']
-        // console.log(Sa.at(0))
-        // console.log(Sa.length)
 
         let textTimeoutId
         let textDeleteTimeoutId
@@ -33,9 +30,7 @@ function TypeAnimation({ strings, className, space, typeSpeed, backSpeed, backSp
                 }
             }, typeSpeed)
             
-        }
-        
-        if(complete){
+        }else if(complete){
 
             if(index == text.length){
                 setTimeout(() => {
