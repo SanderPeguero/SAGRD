@@ -1,10 +1,22 @@
-import {HashRouter as Router, Route, Routes} from 'react-router-dom'
+import { useState } from 'react'
+// import './App.css'
+import {
+  HashRouter as Router,
+  Route, Routes
+} from 'react-router-dom';
+
 
 //components
+import Analytics from './components/Analytics'
+import Cards from './components/Cards'
 import Footer from './components/Footer'
-import MapComponent from './components/Maps/MapComponent'
+import Hero from './components/Hero'
 import Navbar from './components/NavBar/Navbar'
-import Home from './components/Initial/home'
+import Newsletter from './components/Newsletter'
+import Contacto from './components/Contactos/Contacto';
+import MapComponent from './components/Maps/MapComponent';
+//components
+import Home from './components/Initial/home';
 
 function App() {
 
@@ -15,11 +27,24 @@ function App() {
           <Navbar />
         </header>
         <main className=''>
+          {/* <Hero /> */}
+          {/* <Contacto /> */}
+          {/* <Analytics />
+          <Newsletter />
+          <Cards /> */}
+          {/* <Footer /> */}
+          {/* <Cards /> */}
+          {/* <MapComponent /> */}
+          {/* <Footer />  */}
           <Routes>
             <Route exact path='/' element={<Home/>} />
             <Route exact path='contacto' element={<MapComponent />} />
+            {/*
+            <Route exact path='/Analytics' element={<Analytics />}/>
+            <Route exact path='/Newsletter' element={<Newsletter />}/>
+            <Route exact path='/Cards' element={<Cards />}/> */}
           </Routes>
-          <Footer/>
+          {/* <Footer />  */}
         </main>
       </Router>
     </div>

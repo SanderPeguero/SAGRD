@@ -40,7 +40,7 @@ const socialMedia = [
 const Footer = () => {
   return (
     <>
-      <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 md:gap-32 lg:gap-32 text-gray-300'>
+      <div className='max-w-[1240px] mx-auto py-12 px-4 grid lg:grid-cols-3 gap-8 md:gap-32 lg:gap-32 text-gray-300'>
         <div>
           <img className='w-[7rem] text-3xl font-bold text-[#00df9a]' src={Logo} alt="SAG Logo" />
           <p className='py-4'>
@@ -101,6 +101,25 @@ const Footer = () => {
               <li className='py-3 text-sm'>Terms</li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div className='max-w-[1240px] mx-auto sm:py-16 py-3'>
+        <div className='w-full flex justify-between items-center md:flex-row flex-col pt-6  border-t-[1px] border-t-[#3f3E45]'>
+            <p className='font-poppins font-normal text-center text-[13px] leading-[27px] text-white'>
+              © 2022 Copyright Quantum Republica Dominicana
+            </p>
+
+            <div className='flex flex-row md:mt-0 mt-6'>
+                {socialMedia.map((social, index) => (
+                  <img
+                  key={social.id} 
+                  src={social.icon} 
+                  alt={social.id} 
+                  className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'}`}
+                  onClick={() => window.open(social.link)}
+                  />
+                  ))}
+            </div>
         </div>
       </div>
     </>
